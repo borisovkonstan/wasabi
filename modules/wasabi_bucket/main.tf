@@ -3,8 +3,4 @@ resource "wasabi_bucket" "my_buckets" {
 
   bucket = each.value
 #   acl    = "private"
-
-  tags = {
-    Name  = each.value
-  }
 }
